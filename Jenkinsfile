@@ -32,6 +32,11 @@ pipeline {
             sleep(time: 20, unit: 'SECONDS')
           }
         }
+        stage('Checkpoint') {
+          steps {
+            checkpoint 'Checkpoint'
+          }
+        }
       }
     }
   }
